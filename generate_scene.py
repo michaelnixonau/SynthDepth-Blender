@@ -55,8 +55,7 @@ def renderOutput():
     data = bproc.renderer.render()
 
     # Write the data to a .hdf5 container
-    # output_dir = "output"
-    output_dir = "/Volumes/Media/DepthSynth/test7"
+    output_dir = "output"
     bproc.writer.write_hdf5(output_dir, data, append_to_existing_output=True)
 
 # Enable depth output for rendering
